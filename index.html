@@ -6,7 +6,6 @@
     <title>division by codename-</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/overwrite.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
@@ -30,15 +29,29 @@
       </header>
       <section>
         <h1>
-<a name="division" class="anchor" href="#division"><span class="octicon octicon-link"></span></a>division</h1>
+<a name="division-" class="anchor" href="#division-"><span class="octicon octicon-link"></span></a>division <a href="https://travis-ci.org/codename-/division"><img src="https://travis-ci.org/codename-/division.png" alt=""></a>
+</h1>
 
 <p>Simple and powerful wrapper over <a href="http://nodejs.org/">node.js</a> <a href="http://nodejs.org/api/cluster.html">cluster</a> API.<br>
-This module is inspired by impressive but abandoned project <a href="https://github.com/LearnBoost/cluster">Cluster</a> created by <a href="https://github.com/visionmedia">visionmedia</a> (TJ Holowaychuk).</p>
+This module is inspired by impressive but abandoned project <a href="https://github.com/LearnBoost/cluster">Cluster</a> created by <a href="https://github.com/visionmedia">@visionmedia</a>.</p>
 
 <h2>
 <a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
 
-<div class="highlight"><pre>npm install division
+<div class="highlight"><pre><span class="nv">$ </span>npm install division
+</pre></div>
+
+<h4>
+<a name="running-tests" class="anchor" href="#running-tests"><span class="octicon octicon-link"></span></a>Running Tests</h4>
+
+<p>First go to module directory and install development dependencies:</p>
+
+<div class="highlight"><pre><span class="nv">$ </span>npm install
+</pre></div>
+
+<p>Then you can test module typing:</p>
+
+<div class="highlight"><pre><span class="nv">$ </span>npm <span class="nb">test</span>
 </pre></div>
 
 <h2>
@@ -58,11 +71,14 @@ This module is inspired by impressive but abandoned project <a href="https://git
 
 <ul>
 <li> debug: enable verbose debugging informations</li>
+<li> watch: reload cluster when files was changed</li>
 <li> signals: add ability to control cluster with POSIX signals</li>
 </ul>
 </li>
 </ul><h2>
 <a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h2>
+
+<p>More examples you can find in <code>examples</code> directory.</p>
 
 <h3>
 <a name="standard-configuration-example" class="anchor" href="#standard-configuration-example"><span class="octicon octicon-link"></span></a>Standard configuration example</h3>
@@ -103,8 +119,8 @@ This module is inspired by impressive but abandoned project <a href="https://git
 
 <p>You can set environment while launching application - in this way:</p>
 
-<pre><code>NODE_ENV=production node cluster.js
-</code></pre>
+<div class="highlight"><pre><span class="nv">$ NODE_ENV</span><span class="o">=</span>production node cluster.js
+</pre></div>
 
 <h3>
 <a name="minimal-configuration-example" class="anchor" href="#minimal-configuration-example"><span class="octicon octicon-link"></span></a>Minimal configuration example</h3>
@@ -309,6 +325,6 @@ This module is inspired by impressive but abandoned project <a href="https://git
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-
+    
   </body>
 </html>
